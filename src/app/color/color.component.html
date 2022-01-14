@@ -13,3 +13,24 @@
 <button (click)="changToPink()">pink</button>
 <button (click)="changToYellow()">yellow</button>
 <h1 [style.color]="abc3" >hí</h1>
+
+
+<div>
+  <label>red</label>
+  <input type="range" min="1" max="255"  [(ngModel)]="a">
+</div>
+
+<div>
+  <label>green</label>
+  <input type="range" min="1" max="255"  [(ngModel)]="b">
+</div>
+
+<div>
+  <label>blue</label>
+  <input type="range" min="1" max="255"  [(ngModel)]="c">
+</div>
+<p class="output" [style.background]="'rgb('+a+','+b+','+c+')'">
+  This is a paragraph.
+<!--  <app-pet></app-pet>-->
+</p>
+

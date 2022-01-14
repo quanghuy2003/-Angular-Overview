@@ -56,4 +56,8 @@ export class ColorComponent implements OnInit {
     this.abc3= "yellow"
   }
 
+  a=1
+  b=1
+  c=1
+
 }
