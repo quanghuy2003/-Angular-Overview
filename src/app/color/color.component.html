@@ -18,19 +18,22 @@
 <div>
   <label>red</label>
   <input type="range" min="1" max="255"  [(ngModel)]="a">
+  <input type="number"   [(ngModel)]="a">
 </div>
 
 <div>
   <label>green</label>
   <input type="range" min="1" max="255"  [(ngModel)]="b">
+  <input type="number"  [(ngModel)]="b">
 </div>
 
 <div>
   <label>blue</label>
   <input type="range" min="1" max="255"  [(ngModel)]="c">
+  <input type="number"   [(ngModel)]="c">
 </div>
-<p class="output" [style.background]="'rgb('+a+','+b+','+c+')'">
+<div class="output" [style.background]="'rgb('+a+','+b+','+c+')'" style="height: 100px">
   This is a paragraph.
 <!--  <app-pet></app-pet>-->
-</p>
+</div>
 
